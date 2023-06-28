@@ -1,0 +1,46 @@
+what is version control?
+it is a software configuration management.
+it is a system that records changes made to a file or a set of files over time so that you can recall specific versions later.
+what are the problems which can be solved by version control?
+problem 1:
+there is a code document.if we want to update the code continuously .one time it is broken the thousands lines of code has a big bug or updation is broken .
+problem2:there are two people sam pete they are ready with their codes and if there is any changes they have done the changes to the code.they are working in the same project.they are keeping the code into the dropbox after this they have made the changes into the code pete has found the errors in the code of sam and updated it .another person have entered into the project htey have to share the files to the new one and they have made their changes in the code.they transferring the code to all the employees they have done past and they have updated version.so it is not applied to the updated version i.e..,code files.
+problem 1 is reverting old files
+problem2 :code should be maintained by the team.
+in this time version cotrol came into existence.
+scenario#1:jerry has code and he has version control he have made chnges to the code he is committing ,and he has version control.in commiting he had found the bug .he checks the commit or previous contol and checks another one and compares it in which commit  it have bug and he cn fix the problem and we can find where the bug is.
+scenario#2:we have multiple people .three persons have their individual codes.they have made changes individually into their codes.they can commit further into the server or to a location they can keep their codes into the server if one person push their code into the location and another peson pull that code if another peson made any changes into the code it is automatically injects the changes into the person code .they have merged the changes  if the person push the code and another person pulls the code inject into his code  he is happy with that code.
+verion control is powerful and it is worked as git.we can use it as git.
+git:Git is a distributed version control tool It is distributed under the GNU license Git is used for maintaining historical and current versions of source code, web pages, etc Version Control System (VCS)
+basics of navigating usinhg terminal and how to change the directory
+changing the directory :navigating te terminal or directories from the one folder and another. 
+creating a file : command is type nul > filename
+to list out the directories or files in the directories:DIR command is used.
+moving the file:move index.html "C:\Users\HARSHITHA\dev\css this is the example to move the file.
+copying a file:copy text.docx "C:\Users\HARSHITHA\dev\css"
+removing a file :we use del keyword.
+removing directory:
+if it is a empty directory rmdir and folder name.
+if it is not a empty file is em -R folder name.
+
+git commands:
+git init:it is referred to the initialization of empty git repository
+git init it is the command
+git checkout-it shows the git commits using the commit keys which are the first seven characters.so that we can modify the statements into that commit and we reupload it.
+git add-it tracks the project after git add we use git status to knowthe status of the project
+git status-it is used to track the projects or files.
+git status is the command.
+git log-it shows the history or the commits which you have done .We can see all the gits and we can do anything to  the past commits also.
+git commit-after tracking we commit the file into the repository in github and it commits it and it gives a message  syntax:git commit -m "first commit"
+ if we make any modifications to the file and we have to git add the project into repository so it will be tracked and then we can see the status and we can commit the git into the repository
+git branch:it is used to show the branch of the gits if you want to get the git branch without having any name to it it shows the detached head,and the if we want to create any new branch we use the followoing command 
+syntax:git checkout -b mynew branch
+and to update the file we chould checkout using the commit keys and the new files which are created will be added into it  and git log states that the commits which are done previously
+syntax:git checkout commit keys(=7)
+to track the all project we use  git add-A command
+SSH:Secure Shell
+git pull is used to pull the file into the github.
+git push is used to push the file into the github.
+syntax:git pull origin master
+       git push origin master
+git mergetool shows the git backups in it .and it merges the git files into the two paths i.ee..,local and remote it stores in this two ways.
