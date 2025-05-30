@@ -1,15 +1,29 @@
+name: Deploy to GitHub Pages
+
 on:
   push:
-    branches: [main]
+    branches: [main]  # or your source branch
+
+permissions:
+  contents: write  # 💥 allows the workflow to push to gh-pages
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: peaceiris/actions-gh-pages@v3
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Build static site (if needed)
+        run: |
+          mkdir public
+          echo "Hello GitHub Pages!" > public/index.html
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.TOKEN }}
           publish_dir: ./public
+
 
 
